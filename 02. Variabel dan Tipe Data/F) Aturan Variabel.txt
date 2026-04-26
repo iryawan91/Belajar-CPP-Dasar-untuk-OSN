@@ -1,0 +1,9 @@
+1. Manakah yang merupakan nama variabel yang sesuai sintaks bahasa C++?
+c. empatSekawan_
+
+2.Manakah potongan program yang TIDAK sesuai sintaks bahasa C++?
+a.
+std::string sandi_lama = "5";
+int sandi_baru = sandi_lama;
+
+Pada soal no. 2, yang tidak sesuai sintaks adalah potongan program a. Kita tidak bisa mengisi variabel bertipe int dengan nilai dari variabel lain yang bertipe std::string

@@ -1,0 +1,28 @@
+Di antara program-program di bawah ini, mana sajakah yang sesuai dengan sintaks bahasa C++? Pilih semua yang memenuhi.
+
+I. Sesuai sintaks bahasa C++
+int main() {
+}
+
+II. Tidak sesuai sintaks bahasa C++
+#include <iostream>
+
+int main() {
+    cout << "C++" << endl;
+}
+
+III. Sesuai sintaks bahasa C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "C++" << endl;
+}
+
+IV. Sesuai sintaks bahasa C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "C++" << std::endl;
+}
