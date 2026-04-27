@@ -1,0 +1,22 @@
+1.
+Apakah keluaran dari program berikut?
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 3, y = 4;
+
+    x -= 1;
+    y += x * 5;
+
+    cout << y << endl;
+}
+
+14
+
+
+2. Semua operasi di bawah ini bermakna sama, KECUALI:
+
+c. x = x + 2;
+Pada soal no. 2, semua operasi (kecuali no. c) melipatgandakan nilai variabel
