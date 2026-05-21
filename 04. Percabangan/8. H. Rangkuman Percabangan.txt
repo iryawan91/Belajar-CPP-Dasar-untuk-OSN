@@ -1,0 +1,10 @@
+Kesimpulan
+
+else if
+
+adalah singkatan dari:
+
+else {
+    if (...)
+
+Jadi kedua kode tersebut ekuivalen.

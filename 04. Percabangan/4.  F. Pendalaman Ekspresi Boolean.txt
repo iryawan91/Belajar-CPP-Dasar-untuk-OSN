@@ -1,0 +1,54 @@
+
+1. Jawaban yang benar adalah: e
+
+a) Artinya: bilangan habis dibagi 1000. Contoh angka yang memenuhi: 0,1000,2000,3000,4000,10000
+❌ Salah,  karena ada yang bukan 4 digit (0), ada yang 5 digit (10000) 
+
+b) Artinya: semua bilangan mulai dari 1000 ke atas. Contoh: 1000,2500,9999,10000,500000
+❌ Salah, karena mencakup bilangan lebih dari 4 digit.
+
+c) Operator || berarti ATAU. Ini membuat hampir semua angka memenuhi syarat.
+Contoh:
+-50   → memenuhi karena <= 10000
+500   → memenuhi karena <= 10000
+1500  → memenuhi keduanya
+20000 → memenuhi karena >= 1000
+❌ Salah total, karena hampir semua integer benar.
+
+d) Artinya: 1000 sampai 10000
+❌ Salah, karena 10000 adalah 5 digit.
+
+e) Artinya: 1000 sampai 9999
+✅ Benar, karena semua bilangan tersebut tepat 4 digit.
+
+2. Tahun kabisat jika: Kelipatan 400 ATAU Kelipatan 4 tetapi bukan kelipatan 100
+
+a) Artinya: kelipatan 400 ATAU, kelipatan 4 ATAU , bukan kelipatan 100
+Masalah:
+hampir semua tahun memenuhi tahun % 100 != 0
+Contoh:
+2023 → bukan kabisat
+2023 % 100 != 0 → true
+
+b) Sesuai persis dengan definisi tahun kabisat.
+Contoh:
+2024 → kabisat
+1900 → bukan kabisat
+2000 → kabisat
+
+✅ Benar
+
+c) Karena memakai &&, maka tahun harus kelipatan 400.
+Akibatnya:
+2024 → seharusnya kabisat
+tetapi bukan kelipatan 400
+hasil = false
+
+❌ Salah
+
+d) tahun % 4 hasilnya hanya: 0, 1, 2, atau 3
+Maka: tahun % 4 != 100. selalu TRUE.
+Artinya hampir semua tahun dianggap kabisat.
+
+❌ Salah
+
