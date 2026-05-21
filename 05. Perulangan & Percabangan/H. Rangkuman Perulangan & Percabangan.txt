@@ -1,0 +1,48 @@
+1. Tidak ekuivalen.
+
+Kode `for` akan berjalan dengan benar, tetapi kode `while` akan mengalami **infinite loop** (perulangan tak berhingga).
+
+Perhatikan bagian ini:
+
+``` 
+while (i < 10) {
+    if (i % 2 == 0) {
+        continue;
+    }
+    cout << "*";
+    i++;
+}
+```
+
+Saat `i = 0`:
+
+* `i % 2 == 0` bernilai true
+* Program menjalankan `continue`
+* `i++` tidak pernah dijalankan
+* Nilai `i` tetap 0 selamanya
+
+Akibatnya loop tidak pernah selesai.
+
+Sedangkan pada `for`:
+
+``` 
+for (int i = 0; i < 10; i++)
+```
+
+Bagian `i++` tetap dijalankan otomatis meskipun ada `continue`.
+
+Agar ekuivalen, kode `while` harus menjadi:
+
+``` 
+int i = 0;
+while (i < 10) {
+    if (i % 2 == 0) {
+        i++;
+        continue;
+    }
+
+    cout << "*";
+    i++;
+}
+```
+ 
