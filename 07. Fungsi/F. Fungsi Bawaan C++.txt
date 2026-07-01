@@ -1,0 +1,75 @@
+Jawaban yang benar adalah:
+
+✅ c. return abs(a - b);
+
+Penjelasan
+
+Fungsi abs() digunakan untuk mencari nilai mutlak (absolute value), sehingga hasilnya selalu positif.
+
+Misalnya:
+
+abs(10 - 7)   // hasil = 3
+abs(7 - 10)   // hasil = 3
+abs(-5)       // hasil = 5
+abs(5)        // hasil = 5
+
+Sehingga fungsi selisih() yang semula:
+
+int selisih(int a, int b) {
+    if (a > b) {
+        return a - b;
+    } else {
+        return b - a;
+    }
+}
+
+bisa disederhanakan menjadi:
+
+int selisih(int a, int b) {
+    return abs(a - b);
+}
+Mengapa pilihan lain salah?
+
+a.
+
+return abs(a, b);
+
+❌ Salah, karena abs() hanya menerima satu parameter, bukan dua.
+
+b.
+
+return abs(a) - abs(b);
+
+❌ Salah.
+
+Contoh:
+
+a = 7
+b = 10
+
+abs(7) - abs(10)
+= 7 - 10
+= -3
+
+Padahal selisih yang diharapkan adalah 3.
+
+c.
+
+return abs(a - b);
+
+✅ Benar.
+
+d.
+
+return abs(a, b) - abs(b, a);
+
+❌ Salah, karena abs() tidak menerima dua parameter.
+
+e.
+
+return abs(a, b) || abs(b, a);
+
+❌ Salah.
+
+|| adalah operator logika (OR), bukan untuk menghitung selisih.
+Selain itu abs(a, b) juga tidak valid.
