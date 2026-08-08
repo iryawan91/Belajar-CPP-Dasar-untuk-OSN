@@ -1,31 +1,25 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main() {
-
-    // Variabel untuk menyimpan jumlah bebek
     int N;
     cin >> N;
 
-    // Variabel untuk menyimpan jumlah baris dan kolom
-    int r = 1;
-    int c = N;
+    int r_terbaik = 1;
+    int c_terbaik = N;
 
-    // Mencari faktor terbesar yang kurang dari atau sama dengan akar N
-    for (int i = 1; i <= sqrt(N); i++) {
-
-        // Jika i adalah faktor dari N
-        if (N % i == 0) {
-
-            // Simpan pasangan faktor terbaru
-            r = i;
-            c = N / i;
+    for (int r = 1; r <= N; r++) {
+        for (int c = r; c <= N; c++) {
+            if (r * c == N) {
+                if ((c - r) < (c_terbaik - r_terbaik)) {
+                    r_terbaik = r;
+                    c_terbaik = c;
+                }
+            }
         }
     }
 
-    // Menampilkan hasil
-    cout << r << " " << c << endl;
+    cout << r_terbaik <<" "<<c_terbaik<<endl;
 
     return 0;
 }
